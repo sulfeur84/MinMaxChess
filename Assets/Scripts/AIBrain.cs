@@ -61,7 +61,7 @@ public class AIBrain {
             value = +1000000;
             foreach (var child in node.Children)
             {
-                value = Mathf.Max(value, MinMax(child, depth + 1, true));
+                value = Mathf.Min(value, MinMax(child, depth + 1, true));
             }
         }
         return value;

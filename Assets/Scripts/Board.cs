@@ -50,7 +50,6 @@ public struct Board : ICloneable {
         }
         return value;
     }
-
     public void ConvertHandyMatrix(Pieces[,] handyMatrix) {
         Matrix = new Piece[handyMatrix.GetLength(0), handyMatrix.GetLength(1)];
         for (int i = 0; i < handyMatrix.GetLength(0); i++) {
